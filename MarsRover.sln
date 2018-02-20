@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsRover.BL", "MarsRover.BL\MarsRover.BL.csproj", "{0076CFBF-8936-4A3E-8131-497F2C714DE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsRover.BL.Test", "MarsRover.BL.Test\MarsRover.BL.Test.csproj", "{A74F29F4-68A7-4ADF-B3D5-2E439108487F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsRover.Console", "MarsRover.Console\MarsRover.Console.csproj", "{AABDEEDA-3CB0-4AA6-B10D-7C535D7733D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsRover.Console.Test", "MarsRover.Console.Test\MarsRover.Console.Test.csproj", "{6EDAE2BF-4703-43BA-9230-172A5F2B06B9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MarsRover.Core", "MarsRover.Core\MarsRover.Core.csproj", "{0F2F479B-B08C-47C6-9611-9F77090A3196}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0076CFBF-8936-4A3E-8131-497F2C714DE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0076CFBF-8936-4A3E-8131-497F2C714DE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0076CFBF-8936-4A3E-8131-497F2C714DE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0076CFBF-8936-4A3E-8131-497F2C714DE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A74F29F4-68A7-4ADF-B3D5-2E439108487F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A74F29F4-68A7-4ADF-B3D5-2E439108487F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A74F29F4-68A7-4ADF-B3D5-2E439108487F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A74F29F4-68A7-4ADF-B3D5-2E439108487F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AABDEEDA-3CB0-4AA6-B10D-7C535D7733D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AABDEEDA-3CB0-4AA6-B10D-7C535D7733D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AABDEEDA-3CB0-4AA6-B10D-7C535D7733D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AABDEEDA-3CB0-4AA6-B10D-7C535D7733D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EDAE2BF-4703-43BA-9230-172A5F2B06B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EDAE2BF-4703-43BA-9230-172A5F2B06B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EDAE2BF-4703-43BA-9230-172A5F2B06B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EDAE2BF-4703-43BA-9230-172A5F2B06B9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F2F479B-B08C-47C6-9611-9F77090A3196}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F2F479B-B08C-47C6-9611-9F77090A3196}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F2F479B-B08C-47C6-9611-9F77090A3196}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F2F479B-B08C-47C6-9611-9F77090A3196}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

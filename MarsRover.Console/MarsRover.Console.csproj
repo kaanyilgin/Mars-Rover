@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MarsRover.BL\MarsRover.BL.csproj">
+      <Project>{0076CFBF-8936-4A3E-8131-497F2C714DE9}</Project>
+      <Name>MarsRover.BL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MarsRover.Core\MarsRover.Core.csproj">
+      <Project>{0F2F479B-B08C-47C6-9611-9F77090A3196}</Project>
+      <Name>MarsRover.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
