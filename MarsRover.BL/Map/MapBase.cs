@@ -37,30 +37,5 @@ namespace MarsRover.BL.Map
         {
             return $"X: {_point.X} Y: {_point.Y}";
         }
-
-        public bool IsPointInMap(Point point)
-        {
-            if (point.X < 0)
-            {
-                return false;
-            }
-
-            if (point.Y < 0)
-            {
-                return false;
-            }
-
-            if (point.X > _point.X)
-            {
-                return false;
-            }
-
-            if (point.Y > _point.Y)
-            {
-                return false;
-            }
-
-            return true;
-        }
     }
 }

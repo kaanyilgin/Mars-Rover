@@ -14,14 +14,7 @@ namespace MarsRover.BL.Rover
         internal ICardinalPoint _cardinalPoint;
         public MovePattern MovePattern { get; set; }
 
-        public bool InMap { get; set; }
-
-        public RoverBase()
-        {
-            InMap = true;
-        }
-        
-        public RoverBase(Point point, ICardinalPoint cardinalPoint) : this()
+        public RoverBase(Point point, ICardinalPoint cardinalPoint)
         {
             _point = point ?? throw new ArgumentNullException(nameof(point));
             _cardinalPoint = cardinalPoint ?? throw new ArgumentNullException(nameof(cardinalPoint));

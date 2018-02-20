@@ -113,7 +113,7 @@ namespace MarsRover.Console
                         type = DirectionType.Right;
                         break;
                     case 'L':
-                        type = DirectionType.Right;
+                        type = DirectionType.Left;
                         break;
                     case 'M':
                         type = DirectionType.Move;

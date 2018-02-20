@@ -41,104 +41,6 @@ namespace MarsRover.BL.Test.Map
         }
 
         [Test]
-        public void Discover_WhenTRoverOn4x4_ShouldRoverIsInMap()
-        {
-            //arrange 
-            Point point = new MarsPoint(4, 4);
-            ICardinalPoint cardinalPoint = new EastCardinalPoint();
-            RoboticRover rover = new RoboticRover(point, cardinalPoint);
-            MovePattern movePattern = new MovePattern(new List<DirectionType>()
-            {
-                DirectionType.Move
-            });
-            rover.MovePattern = movePattern;
-            _map.Rovers = new List<RoverBase>()
-            {
-                rover
-            };
-
-            //act
-            _map.Discover();
-
-            //assert
-            Assert.IsTrue(rover.InMap);
-        }
-
-        [Test]
-        public void Discover_WhenTRoverOn5x5_ShouldRoverIsNotInMap()
-        {
-            //arrange 
-            Point point = new MarsPoint(5, 5);
-            ICardinalPoint cardinalPoint = new EastCardinalPoint();
-            RoboticRover rover = new RoboticRover(point, cardinalPoint);
-            MovePattern movePattern = new MovePattern(new List<DirectionType>()
-            {
-                DirectionType.Move
-            });
-            rover.MovePattern = movePattern;
-            _map.Rovers = new List<RoverBase>()
-            {
-                rover
-            };
-
-            //act
-            _map.Discover();
-
-            //assert
-            Assert.IsFalse(rover.InMap);
-        }
-
-        [Test]
-        public void IsPointInMap_WhenMapIs5x5AndPointIs5x5_ShouldTrue()
-        {
-            //act
-            bool isInMap = IsInMap(5, 5);
-
-            //assert
-            Assert.IsTrue(isInMap);
-        }
-
-        [Test]
-        public void IsPointInMap_WhenMapIs5x5AndPointIs4x4_ShouldTrue()
-        {
-            //act
-            bool isInMap = IsInMap(4, 4);
-
-            //assert
-            Assert.IsTrue(isInMap);
-        }
-
-        [Test]
-        public void IsPointInMap_WhenMapIs5x5AndPointIs0x0_ShouldTrue()
-        {
-            //act
-            bool isInMap = IsInMap(0, 0);
-
-            //assert
-            Assert.IsTrue(isInMap);
-        }
-
-        [Test]
-        public void IsPointInMap_WhenMapIs5x5AndPointIs5x6_ShouldFalse()
-        {
-            //act
-            bool isInMap = IsInMap(5, 6);
-
-            //assert
-            Assert.IsFalse(isInMap);
-        }
-
-        [Test]
-        public void IsPointInMap_WhenMapIs5x5AndPointIs6x5_ShouldFalse()
-        {
-            //act
-            bool isInMap = IsInMap(6, 5);
-
-            //assert
-            Assert.IsFalse(isInMap);
-        }
-
-        [Test]
         public void Discover_WhenRoverIsOn1_2NPatternIsLMLMLMLMM_ShouldLastPositionIs1_3_N()
         {
             //arrange
@@ -199,23 +101,11 @@ namespace MarsRover.BL.Test.Map
             return map;
         }
 
-        private bool IsInMap(int x, int y)
-        {
-            //arrange
-            Point point = new MarsPoint(x, y);
-
-            //act
-            return _map.IsPointInMap(point);
-        }
     }
 
     public class RoverStub : RoverBase
     {
         public int MoveCalledCount { get; set; }
-
-        public RoverStub()
-        {
-        }
 
         public RoverStub(Point point, ICardinalPoint cardinalPoint) : base(point, cardinalPoint)
         {

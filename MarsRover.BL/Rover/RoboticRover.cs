@@ -5,11 +5,6 @@ namespace MarsRover.BL.Rover
 {
     public class RoboticRover : RoverBase
     {
-        public RoboticRover()
-        {
-            
-        }
-        
         public RoboticRover(Point point, ICardinalPoint cardinalPoint) : base(point, cardinalPoint)
         {
         }
